@@ -5,6 +5,7 @@ import './Home.css'
  const Home = () => {
 
     const data = [
+        
         {
             "name": "Cosmetics",
             "productList": [
