@@ -1,9 +1,12 @@
  import './App.css';
- import Home from './components/Home';
-
+  import HomeContainer from './continers/HomeContainer';
+import HeaderContainer from './continers/HeaderContainer';
 function App() {
   return (
-     <Home/>
+<>
+     <HeaderContainer/>
+     <HomeContainer/>
+</>    
   );
 }
 

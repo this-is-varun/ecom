@@ -2,8 +2,7 @@ import React from 'react'
 import { useState } from 'react'
  import Card from './Card'
 import './Home.css'
- const Home = () => {
-
+ const Home = (props) => {
     const data = [
         
         {
@@ -78,7 +77,7 @@ import './Home.css'
                   <p>Name : {k.name}</p>
                   <p>Price :{k.price}</p>
                     <br />
-                   <button onClick={()=>AddToCart(categoryIndex,ItemIndex)}>ADD to Cart </button>
+                   <button onClick={()=>{AddToCart(categoryIndex,ItemIndex);{props.addToCartHandler({Name: k.name, price : k.price})}}}>ADD to Cart </button>
                     <br />
                     <button onClick={()=>removeFromCart(categoryIndex,ItemIndex)}>Remove From Cart </button>
                     </div>
