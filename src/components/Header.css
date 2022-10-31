@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ .backdrop_navabar{
+     height: 10vh;
+     width: 100vw;
+     background-color: rgb(108, 108, 201);
+     display: flex;
+     justify-content: space-around;
+  }
+ .navbar_right{
+     height: 100%;
+     width: 65%;
+     background-color: brown;
+ }
+ .navbar_left{
+    height: auto;
+    width: 25%;
+    background-color: brown;
+    z-index: 1;
+    padding: 1rem;
+}
+.main_navbar{
+    height: auto;
+    width: auto;
+    padding: 15px;
+    background-color: cadetblue;
+   font-weight: bold;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar_left i{
+    font-size: 2rem;
+}
+.counter{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 3px;
+    border-radius: 50%;
+ 
+}
