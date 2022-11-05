@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.backdrop_checkout{
+    height: auto;
+    width: 100vw;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+padding: 5rem;    
+
+}
+.checkout_main{
+    height: auto;
+    width: 30%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    
+}
+.checkout_box{
+    height: 70%;
+    width: 95%;
+     margin: 1rem;
+    text-align: center;
+}
+.checkout_box_top{
+     padding: 10px;
+}
+.checkout_box_middle{
+     padding: 10px;
+}
+.cartItem{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.name{
+ }
+.price{
+ }
+.checkout_box_bottom{
+     padding: 10px;
+
+}

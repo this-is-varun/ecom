@@ -1,7 +1,21 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import './Header.css'
 function Header(props){
+
+  
+  const [items, setItems] = useState([]);
+   useEffect(() => {
+    const items = JSON.parse(localStorage.getItem('items'));
+    if (items) {
+     setItems(items);
+    }
+    
+  }, []);
+
+  console.log(items);
+
+   
 
      const [display,setDisplay] = useState('none');
 
@@ -11,8 +25,15 @@ function Header(props){
        } else if(display === "block"){
          setDisplay("none");
        }
-
      }
+     
+ 
+ 
+    
+ 
+
+
+     
 
 
   return(
@@ -30,13 +51,18 @@ function Header(props){
             <>
       <div className='main_navbar' key={curr} style={{display:display}}>
                 <p>Name : {curr.cardData.Name}</p>
-                
                 <p>Price : {curr.cardData.price}</p>
                 <hr />
                 </div>
             </>
            )})
       }
+
+      <div className='checkout_btn' style={{display:display}}>
+      <a href="/checkout"><h1>Checkout</h1></a> 
+ 
+      </div>
+ 
       </div>
 
       </div>

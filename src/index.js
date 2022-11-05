@@ -8,13 +8,14 @@ import reportWebVitals from './reportWebVitals';
 import {createStore} from 'redux'
 import {Provider} from 'react-redux'
 import rootReducer from './service/reducers/index'
+import Main from './Routes';
 const store=createStore(rootReducer)
 // 
  
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
-    <App />
+    <Main />
   </Provider>
 );
 

@@ -1,6 +1,7 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
  import Card from './Card'
+
 import './Home.css'
  const Home = (props) => {
     const data = [
@@ -39,7 +40,12 @@ import './Home.css'
         console.log("Product added to cart");
         }
          console.log(cart);
+        
+     
 
+useEffect(() => {
+  localStorage.setItem('items', JSON.stringify(cart));
+}, [cart]);
 
 
          const removeFromCart = (categoryIndex,ItemIndex) => {

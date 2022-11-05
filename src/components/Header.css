@@ -42,3 +42,16 @@
     border-radius: 50%;
  
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+.checkout_btn{
+    height: auto;
+    width: auto;
+    padding: 15px;
+    background-color: cadetblue;
+   font-weight: bold;
+   text-transform: uppercase;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
